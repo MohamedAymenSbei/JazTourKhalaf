@@ -55,9 +55,15 @@
     <!-- end banner image -->
 
     <!-- accomodation -->
+
     <div class="container accommodation" id="accommodation">
         <h1 class="title">Accommodation</h1>
         <div class="container content">
+            <div class="img_card  ">
+                <div class="reception-img">
+                    <img src="assets/reception.jpeg" alt="resception">
+                </div>
+            </div>
             <div class="faq">
                 <div class="question" data-bs-toggle="collapse" href="#q1" role="button" aria-expanded="false"
                     aria-controls="q1">
@@ -95,6 +101,32 @@
     <!-- housekeeping -->
     <div class="container housekeeping" id="housekeeping">
         <h1 class="title">Housekeeping</h1>
+        <div class="img_card m-md-3">
+            <div id="fading-carousel_room" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="/assets/room1.webp" class="d-block w-100" alt="pool">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="assets/room2.webp" class="d-block w-100" alt="massage">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="assets/room3.webp" class="d-block w-100" alt="massage">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#fading-carousel_room"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#fading-carousel_room"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
         <div class="container content">
             <div class="faq">
                 <div class="question" data-bs-toggle="collapse" href="#qh1" role="button" aria-expanded="false"
@@ -133,15 +165,35 @@
     </div>
     <!-- end housekeeping -->
 
-    <!-- housekeeping -->
+    <!-- restauration -->
     <div class="container restoration" id="restoration">
         <h1 class="title">Restauration</h1>
         <div class="container content">
             <div class="row">
                 <div class="col-12  col-md-6">
-                    <div class="restorant_card">
-                        <div class="title"><i class="fa-solid fa-utensils"></i> &nbsp;&nbsp;Main  Restaurant</div>
-                   
+                    <div class="restorant_card resto">
+                        <div class="title"><i class="fa-solid fa-utensils"></i> &nbsp;&nbsp;Main Restaurant</div>
+                        <div id="resto-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="/assets/resto2.jpeg" class="d-block w-100" alt="pool">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="/assets/resto1.jpg" class="d-block w-100" alt="massage">
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#resto-carousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#resto-carousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <ul>
                             <li>Breakfast : From <b>07:00</b> to <b>10:00</b></li>
                             <li>Late Breakfast : From <b>10:00</b> to <b>11:30</b></li>
@@ -149,18 +201,40 @@
                             <li>Snack : From <b>15:00</b> to <b>17:30</b></li>
                             <li>Dinner : From <b>18:30</b> to <b>21:30</b></li>
                         </ul>
-                        
+
                     </div>
-                    
-                    
+
+
                 </div>
                 <div class="col-12  col-md-6">
-                    <div class="restorant_card">
-                        <div class="title"><i class="fa-solid fa-utensils"></i> &nbsp;&nbsp;Thematic  Restaurant</div>
+                    <div class="restorant_card resto">
+                        <div class="title"><i class="fa-solid fa-utensils"></i> &nbsp;&nbsp;Thematic Restaurant</div>
+                        <div id="thematic-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="assets/thematic.webp" class="d-block w-100" alt="pool">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="/assets/thematic2.jpeg" class="d-block w-100" alt="massage">
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#thematic-carousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#thematic-carousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
                         <ul>
                             <li>Tunisian Restaurant : From <b>19:00</b> to <b>21:30</b></li>
-                            <li>Italian  Restaurant : From <b>19:00</b> to <b>21:30</b></li>
-                            <li>Pecheur  Restaurant : From <b>19:00</b> to <b>21:30</b></li>
+                            <li>Italian Restaurant : From <b>19:00</b> to <b>21:30</b></li>
+                            <li>Pecheur Restaurant : From <b>19:00</b> to <b>21:30</b></li>
                         </ul>
                     </div>
                 </div>
@@ -168,6 +242,27 @@
                 <div class="col-12 ">
                     <div class="restorant_card">
                         <div class="title"> <i class="fa-solid fa-wine-glass"></i>&nbsp;&nbsp;Bar</div>
+                        <div id="fading-carousel_bar" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="/assets/bar1.png" class="d-block w-100" alt="pool">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="assets/bar2.jpeg" class="d-block w-100" alt="massage">
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#fading-carousel_bar"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#fading-carousel_bar"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <ul>
                             <li>Lobby Bar : <b>24 hours</b> open</li>
                             <li>Coffee Bar : From <b>16:00</b> to <b>01:00</b></li>
@@ -176,31 +271,57 @@
                             <li>Beach Bar : From <b>10:00</b> to <b>18:00</b></li>
                         </ul>
                         <div class="p-md-3">
-                            <li class="text-danger">Note : To fill your mini bar please contact lobby bar or reception</li>
+                            <li class="text-danger">Note : To fill your mini bar please contact lobby bar or reception
+                            </li>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end housekeeping -->
+    <!-- end restauration -->
 
     <!-- Thalasso  -->
     <div class="container thalasso" id="thalasso">
         <h1 class="title">Thalasso</h1>
         <div class="container content">
             <div class="row">
-                
-                
+
+
 
                 <div class="col-12 ">
                     <div class="thalasso_card">
-                        <div class="title"><i class="fa-solid fa-person-swimming"></i>&nbsp;&nbsp;Indoor Pool / Gym</div>
+                        <div class="title"><i class="fa-solid fa-person-swimming"></i>&nbsp;&nbsp;Indoor Pool / Gym
+                        </div>
+
+                        <div id="fading-carousel_thalasso" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="/assets/pool.webp" class="d-block w-100" alt="pool">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="assets/massage.webp" class="d-block w-100" alt="massage">
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#fading-carousel_thalasso" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#fading-carousel_thalasso" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <ul>
                             <li>Available From <b>08:30</b> to <b>18:30</b></li>
                         </ul>
+
                         <div class="p-md-3">
-                            <li class="text-danger">Note : To book a massage session or for any other information please call <b>1003</b></li>
+                            <li class="text-danger">Note : To book a massage session or for any other information please
+                                call <b>1003</b></li>
                         </div>
                     </div>
                 </div>
@@ -209,12 +330,105 @@
     </div>
     <!-- end Thalasso  -->
 
+    <!-- restauration -->
+    <div class="container entertainment" id="entertainment">
+        <h1 class="title">Entertainment</h1>
+        <div class="container content">
+            <div class="row">
 
-    <footer class="bg-dark text-light text-center p-md-3">&copy; Copyright <span id="date"></span> JAZ Tour Khalef</footer>
+
+                <div class="col-12 col-md-6 ">
+                    <div class="thalasso_card resto">
+                        <div class="title"> <i class="fa-sharp fa-solid fa-baseball-bat-ball"></i>&nbsp;&nbsp;Mini Club
+                        </div>
+                        <div id="fading-carousel_mini-club" class="carousel slide carousel-fade"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="/assets/miniclub.webp" class="d-block w-100" alt="miniclub">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="assets/miniclub2.webp" class="d-block w-100" alt="miniclub">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="assets/miniclub3.jpeg" class="d-block w-100" alt="miniclub">
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#fading-carousel_mini-club" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#fading-carousel_mini-club" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <ul>
+                            <li class="p-3">Our mini club is the perfect place for children aged 4 to 12 to have fun and
+                                make new
+                                friends. Our experienced and friendly staff will supervise and entertain your little
+                                ones with a variety of activities and games, such as arts and crafts, treasure hunts,
+                                and sports. The mini club is open from 10am to 12pm, and from 3pm to 5pm, so you can
+                                enjoy some relaxation time while your children are in safe hands. Join us and let your
+                                kids experience the magic of our mini club!</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 ">
+                    <div class="thalasso_card resto">
+                        <div class="title"> <i class="fa-solid fa-masks-theater"></i>&nbsp;&nbsp;Activities
+                        </div>
+                        <div id="fading-carousel_animation" class="carousel slide carousel-fade"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="/assets/pool1.jpeg" class="d-block w-100" alt="miniclub">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="assets/pool2.png" class="d-block w-100" alt="miniclub">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="assets/pool3.jpg" class="d-block w-100" alt="miniclub">
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#fading-carousel_animation" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#fading-carousel_animation" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <ul>
+                            <li class="p-3">At our hotel, we offer a wide range of activities and entertainment options
+                                to keep our guests entertained during their stay. From aqua gym and pool games to tennis
+                                and volleyball matches, there's always something fun to do. We also have a team of
+                                professional animators who will delight guests of all ages with a variety of activities
+                                and shows. Whether you're looking to stay active or simply relax and have fun, our
+                                entertainment options have something for everyone.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end restauration -->
+
+    <footer class="bg-dark text-light text-center p-md-3">&copy; Copyright <span id="date"></span> JAZ Tour Khalef
+    </footer>
 
 
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
