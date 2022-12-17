@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <audio id="music" src="assets/audio/background-music.mp3" loop autoplay></audio>
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
@@ -213,7 +214,7 @@
         <h1 class="title">Dining Services</h1>
         <div class="container content">
             <div class="row">
-                <div class="col-12  col-md-6">
+                <div class="col-12  ">
                     <div class="restorant_card resto">
                         <div class="title"><i class="fa-solid fa-utensils"></i> &nbsp;&nbsp;Main Restaurant</div>
                         <div id="resto-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -249,41 +250,7 @@
 
 
                 </div>
-                <div class="col-12  col-md-6">
-                    <div class="restorant_card resto">
-                        <div class="title"><i class="fa-solid fa-utensils"></i> &nbsp;&nbsp;Thematic Restaurant</div>
-                        <div id="thematic-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="5000">
-                                    <img src="assets/thematic.webp" class="d-block w-100" alt="pool">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="5000">
-                                    <img src="assets/thematic2.jpeg" class="d-block w-100" alt="massage">
-                                </div>
-
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#thematic-carousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#thematic-carousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-
-                        <ul>
-                            <li>Tunisian Restaurant : From <b>19:00</b> to <b>21:30</b></li>
-                            <li>Italian Restaurant : From <b>19:00</b> to <b>21:30</b></li>
-                            <li>Fresh Fish Restaurant : From <b>19:00</b> to <b>21:30</b></li>
-                        </ul>
-                        <div class="p-md-3">
-                            <li class="text-danger">Note : Our Thematic restaurants are complimentary and can be booked with our headwaiter</li>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <div class="col-12 ">
                     <div class="restorant_card">
@@ -468,12 +435,15 @@
         </div>
     </div>
     <!-- end restauration -->
+    <button class="music-btn"><i class="fa-solid fa-volume-xmark"></i></button>
 
     <footer class="bg-dark text-light text-center p-md-3">&copy; Copyright <span id="date"></span> JAZ Tour Khalef
     </footer>
 
 
     </div>
+    <script defer src="js/music-control.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

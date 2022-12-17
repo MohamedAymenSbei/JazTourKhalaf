@@ -9,18 +9,3 @@ window.addEventListener('scroll', function () {
     }
 });
 
-const children = document.querySelectorAll('.resto');
-
-// Find the tallest child div
-var tallest = 0;
-for (var i = 0; i < children.length; i++) {
-  if (children[i].offsetHeight > tallest) {
-    tallest = children[i].offsetHeight;
-  }
-}
-
-// Set the height of all child divs to the tallest height
-for (var i = 0; i < children.length; i++) {
-  children[i].style.height = tallest + 'px';
-}
-
