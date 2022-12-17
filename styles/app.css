@@ -215,11 +215,17 @@ nav {
     border: none;
     position: fixed;
     right: 0;  
-    padding: .5rem;
+    padding: .3rem .7rem;
     top: 50%;  
     font-size: 2rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    transition: background 250ms linear;
+
+}
+
+.music-btn:hover{
+    background: #0dcaf0;
 }
 
 .music-btn i {
